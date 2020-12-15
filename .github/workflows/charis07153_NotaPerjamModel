@@ -1,0 +1,22 @@
+package Model;
+import Entity.charis07153_NotaPerjamEntity;
+import java.util.ArrayList;
+
+public class charis07153_NotaPerjamModel{
+    private ArrayList <charis07153_NotaPerjamEntity> notaperjamEntityArrayList;
+    public charis07153_NotaPerjamModel() {
+        notaperjamEntityArrayList = new ArrayList <charis07153_NotaPerjamEntity>();
+    }
+    
+    public void insert(charis07153_NotaPerjamEntity notaPerhari){
+        notaperjamEntityArrayList.add(notaPerhari);
+    }
+    
+    public charis07153_NotaPerjamEntity showData(int index){
+        return notaperjamEntityArrayList.get(index);
+    }
+    
+    public void delete(int index){
+        notaperjamEntityArrayList.remove(index);
+    }
+}
