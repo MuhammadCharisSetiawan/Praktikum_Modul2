@@ -1,0 +1,25 @@
+package Model;
+
+import Entity.charis07153_KendaraanEntity;
+import java.util.ArrayList;
+
+public class charis07153_KendaraanModel{
+    private ArrayList <charis07153_KendaraanEntity> kendaraanEntityArrayList;
+    
+    public charis07153_KendaraanModel() {
+        kendaraanEntityArrayList = new ArrayList <charis07153_KendaraanEntity>();
+    }
+    
+    public void insert(charis07153_KendaraanEntity kendaraan){
+        kendaraanEntityArrayList.add(kendaraan);
+    }
+    
+    public charis07153_KendaraanEntity showData(int index){
+        return kendaraanEntityArrayList.get(index);
+    }
+    
+    public void delete(int index){
+        kendaraanEntityArrayList.remove(index);
+    }
+    
+}
